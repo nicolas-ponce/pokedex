@@ -90,7 +90,7 @@
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: .8rem;
     }
 
     
@@ -99,6 +99,7 @@
     }
         
     .search-box__inputBtn {
+        margin-top: 1.6rem;
         width: 100%;
     }
 
