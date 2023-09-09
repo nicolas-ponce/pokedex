@@ -4,12 +4,6 @@ const boxContainer = document.querySelector(".pokemon-box");
 const themeBtn = document.querySelector(".lightMode-darkMode");
 
 
-searchBarInput.addEventListener("click", () => {
-    searchBarInput.select();
-})
-searchBtn.addEventListener("click", () => {fetchPokemonData()})
-
-
 
 
 
@@ -144,6 +138,7 @@ const ifError = (value) => {
             </div>
         `;
         searchBarInput.classList.add("is-error");
+
         setTimeout(() => {
             boxContainer.innerHTML = '';
             searchBarInput.classList.remove("is-error");
@@ -155,3 +150,14 @@ const ifError = (value) => {
 
 
 
+const initApp = () => {
+    // Selecciona el texto escrito para volver a escribir
+    searchBarInput.addEventListener("click", () => {
+        searchBarInput.select();
+    })
+
+    // Fetchea y renderiza los pokemones
+    searchBtn.addEventListener("click", () => {fetchPokemonData()})
+}
+
+initApp();
