@@ -31,7 +31,7 @@ input {
 .parent {
     width: 95%;
     margin: 2rem auto;
-    height: calc(100vh - 4rem);
+    height: min(calc(100vh - 4rem), fit-content);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +43,7 @@ input {
 .error-div {
     height: fit-content;
     margin: 4rem auto;
+    text-wrap: wrap;
 }
 
 

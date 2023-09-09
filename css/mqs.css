@@ -1,3 +1,107 @@
 @media (max-width: 992px) {
+    img {
+        width: 20rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+    .parent {
+        padding: 0;
+    }
+
+    .search-box__inputBtn {
+        width: 60%;
+    }
+
+    .pokemon-box {
+        gap: .8rem;
+    }
+
+
+
+    .box-row {
+        gap: 1.6rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 15rem;
+    }
     
+    .parent {
+        gap: 1.2rem;
+    }
+
+    .search-box {
+        justify-content: center;
+    }
+        
+    .search-box__inputBtn {
+        position: relative;
+        justify-self: center;
+        width: 80%;
+        margin: auto;
+    }
+        
+    .search-box__inputBtn button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+    }
+
+    
+    .pokemon-box {
+        flex-direction: column;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    .box__img-name {
+        justify-self: center;
+        width: 100%;
+    }
+    
+    .features {
+        gap: .8rem;
+        height: fit-content;
+    }
+
+    .box {
+        justify-content: center;
+        height: fit-content;
+    }
+    
+    .box-row {
+        gap: 1.2rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    img {
+        width: 10rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    
+    .parent {
+        gap: .8rem;
+    }
+        
+    .search-box__inputBtn {
+        width: 100%;
+    }
+
+
+
 }

@@ -4,6 +4,9 @@ const boxContainer = document.querySelector(".pokemon-box");
 const themeBtn = document.querySelector(".lightMode-darkMode");
 
 
+searchBarInput.addEventListener("click", () => {
+    searchBarInput.select();
+})
 searchBtn.addEventListener("click", () => {fetchPokemonData()})
 
 
